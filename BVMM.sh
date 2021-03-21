@@ -3,7 +3,7 @@
 ISODIR="/mnt/uwu/isos"
 VMDIRECTORY="/mnt/uwu/drives"
 cd $VMDIRECTORY
-clear
+cat .template.sh && clear || echo "Template was not located, Downloading..." && wget "https://raw.githubusercontent.com/Kimitzuni/BVMM/master/.template.sh"
 echo "Bash Virtual Machine Manager"
 echo ""
 echo "[ 1 ] Start VM"
@@ -20,7 +20,7 @@ if [[ $choice == "1" ]]; then
 	ls *.sh | sed 's/.sh//g' | sed 's/BVMM//g' | sed 's/ //g'
 	echo ""
 	read vm
-	"./$vm.sh" || echo "well shite" || echo "HOW?!"
+	"./$vm.sh" || echo "This VM could not be found, are you sure you typed it correctly? You don't need to put the .sh extension if you put it." || echo "HOW?!"
 fi
 
 if [[ $choice == "2" ]]; then
