@@ -1,6 +1,6 @@
 # BVMM
-A Bash Virtual Machine Manager
+The Bash Virtual Machine Manager
 
-Note : Edit the `BVMM.sh` file and change the variables `VMDIRECTORY` and `ISODIR` to your directories
+A low effort Bash Virtual Machine Manager for QEMU command line
 
-I may or may not continue work on this.
+Note : Edit the `BVMM.sh` file and change the 2 variables at the top to directories of your VMs and ISOs
